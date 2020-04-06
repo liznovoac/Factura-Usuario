@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Compra exitosa. </title>
+</head>
+<body>
+  <h2> FACTURA. </h2>
+  <p> Recibo: A000001 </p>
+    <p> <strong> Fecha: </strong> 05/03/2020 </p>
+      <p> <strong> Hora: </strong> 15:10 </p>
+  <script>
+    var usuario = prompt ("Inserte su nombre y apellido");
+    var articulo_1_cantidad = Number (prompt ("Cantidad del articulo 1"));
+    var articulo_1_precio = Number (prompt ("Precio del articulo 1"));
+    var articulo_2_cantidad = Number (prompt ("Cantidad del articulo 2"));
+    var articulo_2_precio = Number (prompt ("Precio del articulo 2"));
+    var Subtotal = (articulo_1_precio * articulo_1_cantidad) + (articulo_2_cantidad * articulo_2_precio)
+    var IVA = Subtotal * 0.21
+    var A_pagar = Subtotal + IVA
+    document.write("<p> <strong> Sr(a) </strong>" + usuario + "</p>" )
+    document.write(" <p> <strong> Cantidad del Articulo 1: </strong> " + articulo_1_cantidad + "</p>")
+    document.write(" <p> <strong> Cantidad del Articulo 2: </strong> " + articulo_2_cantidad + "</p>")
+    document.write(" <p> <strong> Precio de la unidad del Articulo 1: </strong> " + articulo_1_precio + " EUR </p>")
+    document.write(" <p> <strong> Precio de la unidad del Articulo 2: </strong> " + articulo_2_precio + " EUR </p>")
+    document.write(" <p> <strong> Subtotal: </strong> " + Subtotal + " EUR </p>")
+    document.write(" <p> <strong> IVA incluido: </strong>" + IVA + " EUR </p>")
+    document.write(" <p> <strong> A pagar: </strong>" + A_pagar + " EUR </p>")
+
+
+    </script>
+    </body>
+    </html>
